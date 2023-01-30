@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200&family=Great+Vibes&family=Lobster&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 
     <title>Bootstrap Day2 | Advanced</title>
 </head>
@@ -12,8 +13,8 @@
     
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" >
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">
-            <img width="70px" height="100%" src="https://upload.wikimedia.org/wikipedia/en/e/e9/Brazil_%281985_film%29_poster.jpg" alt="Poster 'Brasil' movie">
+          <span class="navbar-brand mb-0 ms-5 h1" style="font-family: Great Vibes, serif; font-weight: bold; font-size: 35px; font-style:italic">
+              Brazil
           </span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -37,19 +38,126 @@
 
     <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Jonathan Pryce</button>
-          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Robert De Niro</button>
-          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Katherine Helmond</button>
-          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Kim Greist</button>
-          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bob Hoskins</button>
+            <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" disabled>Actors:</button>
+          <button class="nav-link active" id="actor-1" data-bs-toggle="pill" data-bs-target="#jonathanPryce" type="button" role="tab" aria-controls="jonathanPryce " aria-selected="true">Jonathan Pryce</button>
+          <button class="nav-link" id="actor-2" data-bs-toggle="pill" data-bs-target="#robertDeNiro" type="button" role="tab" aria-controls="robertDeNiro" aria-selected="false">Robert De Niro</button>
+          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#katherineHelmond" type="button" role="tab" aria-controls="katherineHellmond" aria-selected="false">Katherine Helmond</button>
+          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#kimGreist" type="button" role="tab" aria-controls="kimGreist" aria-selected="false">Kim Greist</button>
+          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#bobHoskins" type="button" role="tab" aria-controls="bobHoskins" aria-selected="false">Bob Hoskins</button>
 
         </div>
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+          <div class="tab-pane fade show active" id="jonathanPryce" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+        
+            <div class="card   mx-auto my-5" style="width: 50%;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jonathan_Pryce_Cannes_2018.jpg/220px-Jonathan_Pryce_Cannes_2018.jpg" class="card-img-top" alt="Jonathan Pryce">
+                <div class="card-body">
+                  <h5 class="card-title">Jonathan Pryce</h5>
+                  <p class="card-text">
+                    <blockquote class="blockquote">
+                        Sir Jonathan Pryce CBE (born John Price; 1 June 1947) is a Welsh actor who is known for his performances on stage and in film and television. He has received numerous awards, including two Tony Awards and two Laurence Olivier Awards. In 2021 he was knighted by Queen Elizabeth II for his services to drama.[1] After studying at the Royal Academy of Dramatic Art, he began his career as a stage actor in the early 1970s. His work in theatre includes an Olivier Award-winning performance in the title role of the Royal Court Theatre's Hamlet in 1980 and as The Engineer in the stage musical Miss Saigon in 1990. 
+                    </blockquote>
+                  </p>
+                  <a href="https://en.wikipedia.org/wiki/Jonathan_Pryce" class="btn btn-primary">Rread more...</a>
+                </div>
+              </div>
+
+          </div>
+          <div class="tab-pane fade" id="robertDeNiro" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+            
+            <div class="card mx-auto my-5" style="width: 50%;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Robert_De_Niro_2011_Shankbone.JPG/800px-Robert_De_Niro_2011_Shankbone.JPG" class="card-img-top" alt="Robert De Niro">
+                <div class="card-body">
+                  <h5 class="card-title">Robert Anthony De Niro Jr. <br>
+                    August 17, 1943 (age 79)
+                    New York City, U.S.
+                </h5>
+                  <p class="card-text">
+                    <blockquote class="blockquote">
+                        Robert Anthony De Niro Jr. (/də ˈnɪəroʊ/ də NEER-roh, Italian: [de ˈniːro]; born August 17, 1943) is an American actor. Known for his collaborations with Martin Scorsese, he is considered to be one of the best actors of his generation. De Niro is the recipient of various accolades, including two Academy Awards, a Golden Globe Award, the Cecil B. DeMille Award, and a Screen Actors Guild Life Achievement Award. In 2009, De Niro received the Kennedy Center Honor, and earned a Presidential Medal of Freedom from U.S. President Barack Obama in 2016.
+                    </blockquote>
+                  </p>
+                  <a href="https://en.wikipedia.org/wiki/Robert_De_Niro" class="btn btn-primary">Rread more...</a>
+                </div>
+              </div>
+
+          </div>
+          <div class="tab-pane fade" id="katherineHelmond" role="tabpanel" aria-labelledby="katherineHelmond" tabindex="0">
+
+            <div class="card mx-auto my-5" style="width: 50%;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Katherine_Helmond.jpg/800px-Katherine_Helmond.jpg" class="card-img-top" alt="Katherine Helmond">
+                <div class="card-body">
+                  <h5 class="card-title">Katherine Marie Helmond <br>
+                    July 5, 1929
+                </h5>
+                  <p class="card-text">
+                    <blockquote class="blockquote">
+                        Katherine Marie Helmond (July 5, 1929 – February 23, 2019) was an American actress. Over her five decades of television acting, she was known for her starring role as Jessica Tate on the sitcom Soap (1977–1981) and her co-starring role as Mona Robinson on Who's the Boss? (1984–1992). Helmond also appeared in a 1993 episode of The Upper Hand, the British version of Who's the Boss?. She also played Doris Sherman on Coach and Lois Whelan (the mother of Debra Barone) on Everybody Loves Raymond. She also appeared as a guest on several talk and variety shows.
+
+                        Helmond had minor or supporting roles in films such as Alfred Hitchcock's Family Plot (1976), Terry Gilliam's Time Bandits (1981) and Brazil (1985), and Garry Marshall's Overboard (1987).[1] She also voiced Lizzie in the Cars film franchise by Disney/Pixar between 2006 and 2017.
+
+
+                    </blockquote>
+                  </p>
+                  <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Katherine_Helmond.jpg/800px-Katherine_Helmond.jpg" class="btn btn-primary">Rread more...</a>
+                </div>
+              </div>
+
+          </div>
+          <div class="tab-pane fade" id="kimGreist" role="tabpanel" aria-labelledby="kimGreist" tabindex="0">
+
+            <div class="card mx-auto my-5" style="width: 50%;">
+                <img src="https://resizing.flixster.com/aaLSoxzPvbkkt1PdFoVbZzamhWc=/300x300/v2/http://media.baselineresearch.com/images/95850/95850_full.jpg" class="card-img-top" alt="Kim Greist">
+
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Kimberley Bret Greist <br> (born May 12, 1958)     
+                </h5>
+                  <p class="card-text">
+                    <blockquote class="blockquote">
+                        Kimberley Bret Greist a retired American actress and model, best known for her roles in films throughout the 1980s and 1990s
+
+                        Greist trained for the stage and spent some of her late teenage years as a professional model in Europe.[1]
+
+                        She then returned to the United States at age 20 and launched her acting career in the off-Broadway comedy Second Prize: Two Months in Leningrad in 1983.[1][2] Her later stage credits included appearances in the New York Shakespeare Festival.[1][3]
+
+                        Greist's first film appearance was in the horror film C.H.U.D. (1984). In 1985, she made a guest appearance in the 1985 Miami Vice episode "Nobody Lives Forever" (S01E21) and also appeared in the film Brazil (1985).
+
+                        Other films in which she appeared during the 1980s included Michael Mann's Manhunter (1986), Throw Momma from the Train (1987),[4] and Punchline (1988). She continued to appear in films and television into the 1990s, with roles in Homeward Bound: The Incredible Journey (1993) and Roswell (1994). She played Emily Young opposite comedians Sinbad and Phil Hartman in the film Houseguest (1995). She also appeared in a number of made-for-television films.[citation needed] In 2001, after appearing on an episode of Judging Amy called "The Last Word", Greist retired from acting.[why?]
+
+                        Greist currently resides in her hometown of Stamford, Connecticut.[1]
+
+                    </blockquote>
+                  </p>
+                  <a href="https://en.wikipedia.org/wiki/Kim_Greist" class="btn btn-primary">Rread more...</a>
+                </div>
+              </div>
+
+
+          </div>
+          <div class="tab-pane fade" id="bobHoskins" role="tabpanel" aria-labelledby="bobHoskins" tabindex="0">
+
+            <div class="card mx-auto my-5" style="width: 50%;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Bob_hoskins_filming_ruby_blue_cropped_%28cropped%29.jpg" class="card-img-top" alt="Bob Hoskins">
+
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Robert William Hoskins <br> 26 October 1942
+                </h5>
+                  <p class="card-text">
+                    <blockquote class="blockquote">
+                        Robert William Hoskins (26 October 1942 – 29 April 2014) was an English actor.[1] His work included lead roles in films and television series such as Pennies from Heaven (1978), The Long Good Friday (1980), Mona Lisa (1986), Who Framed Roger Rabbit (1988), Mermaids (1990), Super Mario Bros. (1993), and Balto (1995), and supporting performances in Brazil (1985), Hook (1991), Nixon (1995), Enemy at the Gates (2001), Mrs Henderson Presents (2005), A Christmas Carol (2009), Made in Dagenham (2010), and Snow White and the Huntsman (2012). He also directed two feature films: The Raggedy Rawney (1988) and Rainbow (1996).
+
+                        Hoskins received the Best Actor Award at the Cannes Film Festival, the BAFTA Award for Best Actor in a Leading Role and the Golden Globe Award for Best Actor – Motion Picture Drama for his role in Mona Lisa. He was also nominated for the Academy Award for Best Actor for the same role. In 2009, he won an International Emmy Award for Best Actor for his appearance on the BBC One drama The Street. He retired from acting in 2012 owing to Parkinson's disease, with which he had been diagnosed the previous year, and died from pneumonia on 29 April 2014 at the age of 71.
+
+                    </blockquote>
+                  </p>
+                  <a href="https://en.wikipedia.org/wiki/Bob_Hoskins" class="btn btn-primary">Rread more...</a>
+                </div>
+              </div>
+
+
+          </div>
         </div>
       </div>
 
